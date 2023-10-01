@@ -11,6 +11,7 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { MessagesComponent } from './messages/messages.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { MessagesComponent } from './messages/messages.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, {dataEncapsulation: false}
